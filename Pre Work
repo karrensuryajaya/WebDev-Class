@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Karren 101</title>
+</head>
+
+<body>
+  <div class="firstclass">
+    <h1>Hi folks! ✋ It's Karren here with two Rs</h1>
+    <h3>UI/UX student | Agriculture Enthusiast 🍀 | San Franciscan 🌉 | Bathroom Singer 🎤</h3>
+    <img src="img/Kar.jpg" alt="Karren here" width="30%" />
+    <p></p>
+    <p><h4>🟪 Find me on Github 🟪</h4>
+        <br><a href="https://github.com/karrensuryajaya" target="_blank">karrensuryajaya</a></br>
+    </p>
+    <p><h4>🟦 Add my LinkedIn 🟦</h4> 
+        <br><a href="https://www.linkedin.com/in/karrensuryajaya/" target="_blank">Karren Suryajaya</a></br>
+    </p>
+    <div class="innerdiv">
+      <p>
+          <b>So who is this <u>Karren</u>?</b> 😀 
+        </p>
+      <hr>
+      <p>
+        I was born and raised in <b><a href="https://www.google.com/maps/place/Jakarta,+Indonesia/@-6.229728,106.6894312,11z/data=!3m1!4b1!4m5!3m4!1s0x2e69f3e945e34b9d:0x5371bf0fdad786a2!8m2!3d-6.2087634!4d106.845599" target="_blank">Jakarta, Indonesia 🇮🇩</a></b>
+        and came to <b> United States 🇺🇸 </b>
+        to obtain my 
+        <br>degree in Agricultural Business from Purdue University <i>(Go Boilermakers!)</i>
+        <p>
+            <br>After graduation, I landed a position with See's Candies and I have been wanting to change my career path into tech
+        👩‍💻 So I am now a grad student, majoring in Digital Arts with a concentration in UI/UX. 💁‍♀️
+        </p>
+        <p>
+            <br>I <b><u>LOVE</u></b> to bake desserts on my spare time! 🍞🎂🍰
+        </p>
+        <br>Also, I am currently a <b>Director of Public Relations and Marketing</b> for <a href="https://solarchapter.com/" target="_blank">Solar Chapter</a>
+        <br>It is a student-led nonprofit organization that are committed to help rural areas in Indonesia through sustainable methods.
+      </p>
+      <hr>
+      <p><b><i>
+              Have you ever been to San Francisco?
+            </i></b>
+      </p>
+      <form>
+        <input type="radio" name="choice" value="yes"> Yes
+        <input type="radio" name="choice" value="no"> No
+    </form>
+
+    <script>
+      const btn = document.querySelector('#btn');
+      // handle click button
+      btn.onclick = function () {
+          const rbs = document.querySelectorAll('input[name="choice"]');
+          let selectedValue;
+          for (const rb of rbs) {
+              if (rb.checked) {
+                  selectedValue = rb.value;
+                  break;
+              }
+          }
+          alert(selectedValue);
+      };
+  </script>
+</body>
+
+</html>
